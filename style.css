@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #bbc6fa;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: fit-content;
+    width: 700px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 50px;
+}
+.container h2{
+    font-size: 32px;
+    margin-bottom: 5px;
+    /* border: 2px solid red; */
+}
+.container hr{
+    height: 7px;
+    width: 75px;
+    background: rgb(23,124,229);
+    border-radius: 3px;
+    margin-bottom: 30px;
+    /* border: 2px solid red; */
+}
+blockquote{
+    min-height: 100px;
+    width: 100%;
+    /* border: 2px solid red; */
+    font-size: 20px;
+    padding: 10px;
+}
+blockquote::before,blockquote::after{
+    content:'"'
+}
+span{
+    width: fit-content;
+    height: fit-content;
+    font-size: 16px;
+    /* border: 2px solid red; */
+    margin-left: 85%;
+    margin-block: 10px;
+}
+.button{
+    width: 100%;
+    height: fit-content;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.button button{
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    margin: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quoteBtn{
+    background-color: rgb(23,124,229);
+    color: #fff;
+    border: none;
+    outline: none;
+}
+.twitter{
+    background-color: #fff;
+    color: black;
+    border: 1px solid rgb(23,124,229);
+}
+img{
+    width: 30px;
+    /* border: 2px solid red; */
+    margin-right: 10px;
+    color: #fff;
+}
+@media screen and (max-width: 750px) {
+    .container {
+        width: 90%;
+    }
+    span{
+        margin-left: 0%;
+    }
+    
+}
+@media screen and (max-width:350px) {
+    .button button{
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
